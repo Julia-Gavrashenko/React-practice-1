@@ -1,16 +1,14 @@
+
+import { RecipeList } from "./resipes-practice/RecipeList"
+import recipes from 'data/recipes.json'
+// import { Global } from "@emotion/react"
+import { GlobalStyle } from "./GlobalStyle"
+import { Layout } from "./Layout"
+
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+  return <Layout>
+    <RecipeList items={recipes} />
+    <GlobalStyle/>
+  </Layout>
+}
