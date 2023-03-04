@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
+ position: relative;
   border: 1px solid black;
   border-radius: 4px;
 `;
@@ -56,6 +57,14 @@ export const Badge = styled.span`
   color: ${props => {
     return props.isActive ? 'white' : 'black';
   }};
+`;
+
+export const Actions = styled.div`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
 `;
 
 
